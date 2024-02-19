@@ -1,4 +1,4 @@
-# Clase 1: Variables en python
+# Tema 1: Variables en python
 # las variables son contenedores para almacenar valores de datos
 # Una variable se crea en el momento en el que se le asigna un valor por primera vez
 print("una variable se crea en el momento que se le asigna un valor")
