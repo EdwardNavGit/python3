@@ -49,7 +49,7 @@ print(f" se verifica si la palabra: {word} esta presente en el texto: \n \"{txt}
 print(f"resultado de la verificacion: {word in txt}")
 print('')
 
-# Para combinar dos cadenas de texto se puede utilizar el oeprador +.
+# Para combinar dos cadenas de texto se puede utilizar el operador + o la funcion format.
 print("cocatenando dos o mas cadenas de texto")
 str1 = 'Hello'
 str2 = 'World'
