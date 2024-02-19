@@ -1,8 +1,6 @@
 import random
 # Tema 2: Tipos de datos en python
 # 2.1 números
-# las variables son contenedores para almacenar valores de datos
-# Una variable se crea en el momento en el que se le asigna un valor por primera vez
 
 # Hay tres tipos numéricos en Python: int, float, complex
 print(f"Las variables de tipo numérico se crean cuando se les asignas un valor")
@@ -36,7 +34,8 @@ print(f"z1: {z1}, z2: {z2}, z3: {z3}")
 print('')
 
 # conversión de tipo 
-# No es posible convertir números complejos a otro tipo de número.
+# es posible convertir de un tipo numerico a otro mediante las funciones de python
+# Nota: No es posible convertir números complejos a otro tipo de número.
 print("es posible convertir de un tipo a otro utilizando los metodos de python")
 x = 1
 y = 2.8  
