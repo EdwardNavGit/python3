@@ -55,7 +55,7 @@ str1 = 'Hello'
 str2 = 'World'
 str3 = str1 + str2  # cocatenacion simple
 aux1 = "My name is Edward, and I am {}"
-str4 = aux1.format(age) # cocatenando un string con un entero
+str4 = aux1.format(25) # cocatenando un string con un entero
 print(f"cocatenacion simple: {str3}")
 print(f"cocatenacion utilizando el metodo format: {str4}")
 print('')
