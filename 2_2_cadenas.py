@@ -69,20 +69,21 @@ m2 = a.lower()  # convierte una cadena de texto en minusculas
 m3 = a.strip()  # elimina espacios en blanco antes o despues de la cadena de texto
 m4 = a.replace('Hello', 'Good bye') # reemplaza una cadena de texto con otra
 m5 = a.split(",")   # devuelve una lista donde el texto entre el separador especificado se convierte en los elementos de la lista.
-m5 = a.count("l")   # devuelve el numero de veces que un valor especifico se repite en la cadena de texto
-m6 = a.find("wor")  # busca en la cadena un valor específico y devuelve la posición donde se encontró
-m7 = a.index("d")   # Busca en la cadena un valor específico y devuelve la posición donde se encontró
+m6 = a.count("l")   # devuelve el numero de veces que un valor especifico se repite en la cadena de texto
+m7 = a.find("wor")  # busca en la cadena un valor específico y devuelve la posición donde se encontró
+m8 = a.index("d")   # Busca en la cadena un valor específico y devuelve la posición donde se encontró
 quantity, itemno, price = 3, 567, 49.95
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
-m8 =  myorder.format(quantity, itemno, price) # permite cocatenar cadenas de texto con otro tipo de variables. El metodo format recibe un numero de argumentos ilimitados, los cuales se reemplazan en el orde establecido
-m9 = "#".join(["hello", "my", "name", "is", "edward"])  # Une todos los elementos de un iterable en una cadena de texto, usando el caracter especificado como separador
+m9 =  myorder.format(quantity, itemno, price) # permite cocatenar cadenas de texto con otro tipo de variables. El metodo format recibe un numero de argumentos ilimitados, los cuales se reemplazan en el orde establecido
+m10 = "#".join(["hello", "my", "name", "is", "edward"])  # Une todos los elementos de un iterable en una cadena de texto, usando el caracter especificado como separador
 print(f"método upper:   {m1}")
 print(f"método lower:   {m2}")
 print(f"método strip:   {m3}")
 print(f"método replace: {m4}")
-print(f"método strip:   {m5}")
+print(f"método split:   {m5}")
 print(f"método count:   {m6}")
 print(f"método find:    {m7}")
-print(f"método find:    {m8}")
-print(f"método join:    {m9}")
+print(f"método index:   {m8}")
+print(f"método format:  {m9}")
+print(f"método join:    {m10}")
 print('')
