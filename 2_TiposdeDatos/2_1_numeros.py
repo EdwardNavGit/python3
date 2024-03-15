@@ -33,6 +33,14 @@ z3 = -5j
 print(f"z1: {z1}, z2: {z2}, z3: {z3}")
 print('')
 
+# Los números binarios son numero que utiliza únicamente dos dígitos: 0 y 1.
+print("ejemplos de tipos de datos binarios:")
+x = 0b0001
+y = 0b0011
+print(f"representacion binaria del {x} = {bin(x)}")
+print(f"representacion binaria del {y} = {bin(y)}")
+print('')
+
 # conversión de tipo 
 # es posible convertir de un tipo numerico a otro mediante las funciones de python
 # Nota: No es posible convertir números complejos a otro tipo de número.
@@ -44,7 +52,9 @@ z = 1j
 a = float(x)    # convert from int to float
 b = int(y)      # convert from float to int
 c = complex(x)  # convert from int to complex
-print(f"(dato original: ({x}, {type(x)}) --> conversion: ({a}, {type(a)})), (dato original: ({y}, {type(y)}) --> conversion: ({b}, {type(b)})), (dato original: ({z}, {type(z)}) --> conversion: ({c}, {type(c)}))")
+print(f"(dato original: ({x}, {type(x)}) --> conversion: ({a}, {type(a)})),
+      (dato original: ({y}, {type(y)}) --> conversion: ({b}, {type(b)})), 
+      (dato original: ({z}, {type(z)}) --> conversion: ({c}, {type(c)}))")
 print('')
 
 # Python no tiene una función para crear un número aleatorio, sin embargo, si tiene un módulo integrado llamado random que se utiliza para crear números aleatorios

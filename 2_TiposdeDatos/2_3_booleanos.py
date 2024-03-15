@@ -1,5 +1,5 @@
 # Tema 2: Tipos de datos en python
-# 2.2 Boleanos
+# 2.3 Boleanos
 
 # Los booleanos representan uno de dos valores posibles: True o False.
 # En python se puede evaluar cualquier expresión y obtener una de dos posibles respuestas: True o False

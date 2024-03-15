@@ -1,0 +1,1 @@
+# Existen 4 tipos de datos en python que se utilizan para almacenar colecciones de datos
