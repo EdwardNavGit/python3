@@ -1,9 +1,10 @@
-import random
 # Tema 2: Tipos de datos en python
 # 2.1 números
+import random
 
 # Hay tres tipos numéricos en Python: int, float, complex
-print(f"Las variables de tipo numérico se crean cuando se les asignas un valor")
+#Las variables de tipo numérico se crean cuando se les asignas un valor
+print(f"Las variables de tipo numérico se crean cuando se les asigna un valor")
 x = 1    # int
 y = 2.8  # float
 z = 1j   # complex
@@ -33,7 +34,7 @@ z3 = -5j
 print(f"z1: {z1}, z2: {z2}, z3: {z3}")
 print('')
 
-# Los números binarios son numero que utiliza únicamente dos dígitos: 0 y 1.
+# Los números binarios son numeros que utilizan únicamente dos dígitos: 0 y 1.
 print("ejemplos de tipos de datos binarios:")
 x = 0b0001
 y = 0b0011
@@ -62,5 +63,3 @@ print("creando un número aleatorio en python")
 r = random.randrange(1, 10)     # número aleatorio entre 1 y 9 (no incluye el 10)
 print(f"número aleatorio: {r}")
 print('')
-
-

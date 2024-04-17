@@ -21,7 +21,7 @@ print('')
 # las cadenas en Python son matrices de bytes que representan caracteres Unicode.
 # Por lo tanto, se pueden utilizar corchetes para acceder a los elementos de la cadena de texto.
 # Nota: Python no tiene un tipo de datos de carácter, un solo carácter es simplemente una cadena con una longitud de 1.
-print("Accediendo a los caracteres de una cadena de texto: ")
+print("para acceder a los caracteres de una cadena de texto se debe utilizar corchetes []: ")
 a = "Hello, World!"
 a1 = a[1]
 a2 = a[2:5] # obtiene los acracteres de la posición 2 a la posición 5 (no incluye el 5)
@@ -36,13 +36,13 @@ print(f"el penultimo caracter de la cadena de texto \"{a}\", obtenido mediante i
 print('')
 
 # Para obtener la longitud de una cadena de texto, se utiliza la funcion len().
-print("Obteniendo la longitud de una cadena de texto:")
+print("El método len() se utiliza para obtener la longitud de una cadena de texto:")
 a = "Hello, World!"
 print(f"la longitud de la cadena es {len(a)}")
 print('')
 
 # Para verificar si un elemento se encuentra dentro de una cadena de texto, se utiliza la palabra clave in
-print("Verificando si un elemento se encuentra dentro de una cadena de texto")
+print("Verificando si un elemento se encuentra dentro de una cadena de texto mediante la palabra clave in")
 word = 'free'
 txt = "The best things in life are free!"
 print(f" se verifica si la palabra: {word} esta presente en el texto: \n \"{txt}\"")
@@ -56,8 +56,8 @@ str2 = 'World'
 str3 = str1 + str2  # cocatenacion simple
 aux1 = "My name is Edward, and I am {}"
 str4 = aux1.format(25) # cocatenando un string con un entero
-print(f"cocatenacion simple: {str3}")
-print(f"cocatenacion utilizando el metodo format: {str4}")
+print(f"cocatenacion simple con el operador +: {str3}")
+print(f"cocatenacion multiple utilizando el metodo format: {str4}")
 print('')
 
 # Python tiene un conjunto de metodos que operan sobre las cadenas de texto

@@ -11,10 +11,14 @@
     # Operadores bit a bit
     # Operadores de Asignación
 
-# operadores aritmeticos:
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES ARITMETICOS
+print("\nOPERADORES ARITMÉTICOS\n")
+
 # Los operadores aritméticos se utilizan con valores numéricos para realizar operaciones matemáticas.
 x, y = 10, 2
-print("uso de operadores aritmeticos en python")
+print("uso de operadores aritméticos en python")
 print(f"adición: {x} + {y} = {x+y}")
 print(f"subtracción: {x} - {y} = {x-y}")
 print(f"multiplicación: {x} * {y} = {x*y}")
@@ -25,7 +29,10 @@ print(f"exponenciación: {x} ** {y} = {x**y}")
 print(f"floor division: {x} // {y} = {x//y}")   # redondea el resultado al número entero más cercano
 print('')
 
-# operadores de comparación:
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES DE COMPARACIÓN
+print("\nOPERADORES DE COMPARACIÓN\n")
+
 # Los operadores de comparación se utilizan para comparar dos varriables.
 print("uso de operadores de comparación en python")
 print(f"operador igual que (==):  {x} == {y} --> {x==y}")
@@ -36,7 +43,10 @@ print(f"operador mayor igual que (>=):  {x} >= {y} --> {x>=y}")
 print(f"operador menor igual que (<=):  {x} <= {y} --> {x<=y}")
 print('')
 
-# operadores lógicos:
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES LÓGICOS
+print("\nOPERADORES LÓGICOS\n")
+
 # Los operadores lógicos se utilizan para combinar declaraciones condicionales.
 x1, y1 = 5, 2
 x2, y2 = 10, 3
@@ -46,7 +56,10 @@ print(f"operador (or) devuelve verdadero si cualquiera de las afirmaciones son v
 print(f"operador (not) invierte el resultado, devuelve false si el resultado es verdadero not ({x1} > {y1})  --> {not(x1>y1)}")
 print('')
 
-# operadores de identidad
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES DE IDENTIDAD
+print("\nOPERADORES DE IDENTIDAD\n")
+
 # Los operadores de identidad se utilizan para comparar los objetos, no si son iguales, sino si en realidad 
 # son el mismo objeto, con la misma ubicación de memoria
 x = ["apple", "banana"]
@@ -61,7 +74,10 @@ print(f"{x} is {z} --> {x is not z}")
 print(f"{x} is {y} --> {x is not y}")
 print('')
 
-# operadores de membresia:
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES DE MEMBRESIA
+print("\nOPERADORES DE MEMBRESIA\n")
+
 # Los operadores de membresía se utilizan para probar si una secuencia esta presente en un objeto.
 x = ["apple", "banana"]
 print("uso de operadores de membresia en python")
@@ -71,7 +87,10 @@ print(f"operador (not in) devuelve True si una secuencia con el valor especifica
 print(f"orange not in {x} --> {'orange' not in x}")
 print('')
 
-# operadores bit a bit
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES BIT A BIT
+print("\nOPERADORES BIT A BIT\n")
+
 # Los operadores bit a bit se utilizan para comparar números (binarios)
 x = 0b110
 y = 0b011
@@ -92,7 +111,10 @@ print(f"operador bit a bit desplazamiento a la derecha (>>) inserta el número e
 print(f"{bin(x)} >> {z} --> {bin(x>>z)}")
 print('')
 
-# operadores de asignación:
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# OPERADORES DE ASIGNACIÓN
+print("\nOPERADORES DE ASIGNACIÓN\n")
+
 # Los operadores de asignación se utilizan para asignar variables a variables.
 x, y = 10, 2
 print("uso de operadores de asignación en python")
@@ -126,4 +148,3 @@ print(f"x = {x}, y = {y}:")
 x //= y
 print(f"x//=y: {x}")
 print('')
-
