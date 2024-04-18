@@ -139,7 +139,7 @@ print(f"Lista modificada: {mylist}")
 print('')
 
 # El método extend() se utiliza para agregar elementos de otra lista a la lista actual.
-print("El método extend() se utiliza para agregar nuevos elementos a una lista.")
+print("El método extend() se utiliza para agregar elementos de una lista a otra")
 aux_list= ["mango", "lemon"]
 print(f"Agregando los elementos de {aux_list} a la lista: {thislist}")
 thislist.extend(aux_list)
@@ -168,6 +168,7 @@ print(f"Lista modificada: {thislist}")
 print('')
 
 # Si hay más de un elemento con el valor especificado, el método remove() elimina el primero de ellos.
+# Este metodo elimina el primer elemento con el valor especificado y genera un error si el elemento no está presente en la lista.
 print("Si hay más de un elemento con el valor especificado, el método remove() elimina el primero de ellos.")
 thislist = ["apple", "banana", "lemon", "cherry", "banana"]
 print(f"Eliminando el primer elemento 'banana' de la lista: {thislist}")
@@ -184,6 +185,7 @@ print(f"Lista modificada: {thislist}")
 print('')
 
 # Si no se especifica el índice, el método pop() elimina el último elemento.
+# Este metodo elimina el elemento en la posición especificada (o el último si no se proporciona un índice), y no genera ningún error si el elemento no está presente en la lista.
 print("Si no se especifica la posicion el método pop() elimina el último elemento de una lista.")
 thislist = ["apple", "banana", "lemon", "cherry", "banana"]
 print(f"Eliminando el último elemento de la lista: {thislist}")

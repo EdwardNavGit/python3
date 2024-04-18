@@ -2,7 +2,7 @@
 # 2.5.2 tuplas
 
 # Las tuplas se utilizan para almacenar varios elementos en una sola variable.
-# Los elementos de tupla están ordenados, no se pueden modificar y permiten valores duplicados.
+# Los elementos de una tupla están ordenados, no se pueden modificar (inmutables) y permiten valores duplicados.
 #   --> Los elementos tienen un orden definido y ese orden no cambiará.
 #   --> Las tuplas no se pueden modificar, lo que significa que no es posible cambiar, agregar o eliminar elementos una vez creada la tupla.
 #   --> Los elementos están indexados, el primer elemento tiene el índice [0], el segundo índice [1], etc
@@ -46,8 +46,8 @@ print(f"Elemento dentro de un par de paréntesis (no es una tupla si no se agreg
 print('')
 
 # ----------------------------------------------------------------------------------------------------------------------------------------
-# ACCEDIENDO A ELEMENTOS ESPECIFICOS DE UNA TUPLA
-print("\nACCEDIENDO A ELEMENTOS ESPECIFICOS DE UNA TUPLA\n")
+# ACCEDIENDO A ELEMENTOS DE UNA TUPLA
+print("\nACCEDIENDO A ELEMENTOS DE UNA TUPLA\n")
 
 # Para determinar si un elemento específico está presente en una tupla, se utiliza la palabra clave in.
 print("Verificando si un elemento específico se encuentra en una tupla:")
@@ -88,7 +88,6 @@ print('')
 print("Si se especifican índices negativos, la búsqueda se inicia desde el final:")
 print(f"Accediendo desde el segundo hasta el penúltimo elemento de la tupla {tuple3}: {tuple3[-6:-1]}") # La búsqueda comienza en el índice -6 (incluido) y finaliza en el índice -2 (no incluido).
 print('')
-
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # MODIFICANDO LOS ELEMENTOS DE TUPLAS
@@ -154,7 +153,7 @@ print('')
 
 # Para eliminar una tupla completamente, se utiliza la palabra clave del.
 # Esto libera la memoria asociada con la tupla, lo que puede ser útil en programas con grandes cantidades de datos
-print("La palabra clave del tambien se utiliza para eliminar completamente una tupla")
+print("La palabra clave del se utiliza para eliminar completamente una tupla")
 print(f"Eliminando la tupla: {my_tuple}")
 del my_tuple
 print('')
