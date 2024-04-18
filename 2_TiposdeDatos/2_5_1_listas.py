@@ -1,10 +1,9 @@
 # Tema 2: Tipos de datos en python
-# 2.5 Listas
+# 2.5.1 Listas
 
 # Las listas se utilizan para almacenar varios elementos en una sola variable.
 # Los elementos de una lista están ordenados, son modificables y permiten valores duplicados:
 #   --> Los elementos tienen un orden definido y ese orden no cambiará. 
-#   --> Los elementos establecidos no pueden ser cambiados, pero si se pueden eliminar y/o agregar elementos.
 #   --> Si se agregan nuevos elementos, los nuevos elementos se colocan al final de la lista.
 #   --> Es posible cambiar, agregar y eliminar elementos en una lista después de haberla creado.
 #   --> Los elementos están indexados, el primer elemento tiene el índice [0], el segundo índice [1], etc
@@ -17,13 +16,13 @@ print("\nDEFINIENDO LISTAS\n")
 # Las listas se definen utilizando corchetes []
 print("Las listas en Python se definen utilizando corchetes []:")
 my_list1 = ["apple", "banana", "cherry"]
-print(f"Lista en Python: {my_list1}")
+print(f"Lista en Python: {my_list1}, Tipo de dato {type(my_list1)}")
 print('')
 
 # También se puede definir una lista utilizando el constructor list()
 print("También se puede definir una lista utilizando el constructor list():")
 thislist = list(("apple", "banana", "cherry")) 
-print(f"Lista en Python: {thislist}")
+print(f"Lista en Python: {thislist}, Tipo de dato: {type(thislist)}")
 print('')
 
 # Las listas pueden contener cualquier tipo de dato, incluso otras listas
@@ -224,7 +223,7 @@ print("Recorriendo los elementos de una lista utilizando un bucle for.")
 my_list1 = ["apple", "mango", "lemon", "banana"]
 print(f"Los elementos de la lista {my_list1} son:")
 for element in my_list1:
-    print(f'Elemento: {element}')
+    print(f'Elemento de la lista: {element}')
 print('')
 
 # Para recorrer los elementos de una lista consultando su número de índice, se utilizan las funciones range() y len().
