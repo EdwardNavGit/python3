@@ -82,8 +82,8 @@ print(f"Accediendo desde el segundo hasta el penúltimo elemento de la lista {li
 print('')
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# CAMBIANDO ELEMENTOS DENTRO DE UNA LISTA
-print("\nCAMBIANDO ELEMENTOS DENTRO DE UNA LISTA\n")
+# CAMBIANDO ELEMENTOS DE UNA LISTA
+print("\nCAMBIANDO ELEMENTOS DE UNA LISTA\n")
 
 # para cambiar el valor de un elemento especifico, se debe consultar el número del indice
 print("Para cambiar el valor de un elemento en una lista, se debe consultar el número del indice")
