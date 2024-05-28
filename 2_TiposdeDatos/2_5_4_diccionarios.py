@@ -196,3 +196,220 @@ print(f"Eliminando el diccionario: {thisdict}")
 del thisdict
 print('')
 
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RECORRIENDO ELEMENTOS DE UN DICCIONARIO
+print("\nRECORRIENDO ELEMENTOS DE UN DICCIONARIO\n")
+
+# Para recorrer los elementos de un diccionario, se puede utilizar un bucle for.
+# Al recorrer un diccionario mediante este método, solo se obtienen las claves del diccionario.
+print("Recorriendo las claves de un diccionario utilizando un bucle for.")
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(f"Las claves del diccionario {thisdict} son:")
+# Nota: el enumerate no es necesario, solo es para generar un contador
+for i, key in enumerate(thisdict):
+    print(f'clave {i+1}: {key}')
+print('')
+
+# Para recorrer los valores del diccionario mediante un bucle for, se debe acceder a cada uno de los elementos mediante su clave respectiva.
+print("Recorriendo los valores de un diccionario utilizando un bucle for.")
+print(f"Los valores del diccionario {thisdict} son:")
+# Nota: el enumerate no es necesario, solo es para generar un contador
+for i, key in enumerate(thisdict):
+    print(f'valor {i+1}: {thisdict[key]}')
+print('')
+
+# Es posible usar el método values() para obtener los valores de un diccionario.
+print("Recorriendo los valores de un diccionario utilizando el método values().")
+print(f"Los valores del diccionario {thisdict} son:")
+# Nota: el enumerate no es necesario, solo es para generar un contador
+for i, value in enumerate(thisdict.values()):
+    print(f'valor {i+1}: {value}')
+print('')
+
+# Es posible usar el método keys() para obtener las claves de un diccionario.
+print("Recorriendo las claves de un diccionario utilizando el método keys().")
+print(f"Las claves del diccionario {thisdict} son:")
+# Nota: el enumerate no es necesario, solo es para generar un contador
+for i, key in enumerate(thisdict.keys()):
+    print(f'clave {i+1}: {key}')
+print('')
+
+# Es posible usar el método items() para obtener los elementos de un diccionario.
+print(f"Los elementos del diccionario {thisdict} son:")
+# Nota: el enumerate no es necesario, solo es para generar un contador
+for i, element in enumerate(thisdict.items()):
+    print(f'elemento {i+1}: ({element[0]}, {element[1]})')
+print('')
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# COMPRENSIÓN DE DICCIONARIOS EN PYTHON
+print("\nCOMPRENSIÓN DE DICCIONARIOS EN PYTHON\n")
+
+# La comprensión de diccionarios ofrece una sintaxis más corta cuando se desea crear un nuevo diccionario basado en los 
+# valores de un iterable existente.
+# Sintaxis:
+# newdict = {key: value for item in iterable if condition == True}
+# El valor de retorno es un diccionario nuevo, que deja la lista original sin cambios.
+
+# Utilizando la comprensión de diccionarios para crear nuevos diccionarios bajo condiciones específicas.
+print("Utilizando la comprensión de diccionarios para crear un nuevo diccionario.")
+fruits = {'fruit1': "apple", 'fruit2': "banana", 'fruit3': "cherry", 'fruit4':"kiwi"}
+print(f"diccionario original: {fruits}")
+fruits_with_a = {key: value for key, value in fruits.items() if "a" in value}
+fruits_without_kiwi = {key: value for key, value in fruits.items() if value != "kiwi"}
+print(f"Diccionario solo con elementos que contengan la letra 'a': {fruits_with_a}")
+print(f"Diccionario excluyendo el elemento 'kiwi': {fruits_without_kiwi}")
+print('')
+
+# El iterable puede ser cualquier objeto iterable, como una lista, tupla, conjunto, etc.
+print("El iterable puede ser cualquier objeto iterable.")
+print("Utilizando la comprensión de diccionarios y la función range() para crear diccionarios de números enteros.")
+digit_dict = {digit: digit + 1 for digit in range(10)}
+digit_dict_less_than_5 = {digit: digit + 1 for digit in range(10) if digit < 5}
+print(f"Diccionario con números del 0 al 9 mapeados a números del 1 al 10: {digit_dict}")
+print(f"Diccionario con números del 0 al 4 mapeados a números del 1 al 5: {digit_dict_less_than_5}")
+print()
+
+# En la sintaxis de comprensión de diccionarios, la expresión es el par clave-valor actual en la iteración, 
+# que también es el resultado y puede ser manipulado antes de ser añadido al nuevo diccionario.
+print("La expresión representa los pares clave-valor resultado que contendrá el nuevo diccionario, los cuales pueden ser manipulados.")
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+fruits_upper = {fruit: fruit.upper() for fruit in fruits}
+print(f"Lista original: {fruits}")
+print(f"Diccionario con frutas en mayúsculas: {fruits_upper}")
+print()
+
+# En la sintaxis de comprensión de diccionarios, la expresión también puede contener condiciones, no solo como un filtro,
+# sino como una forma de manipular el resultado.
+print("La expresión puede contener condiciones como una forma de manipular el resultado.")
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newdict = {fruit: (fruit if fruit != "banana" else "lemon") for fruit in fruits}
+print(f"Lista original: {fruits}")
+print(f"Diccionario manipulado: {newdict}")
+print('')
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# COPIANDO UN DICCIONARIO
+print("\nCOPIANDO UN DICCIONARIO\n")
+
+# No es posible copiar un diccionario simplemente escribiendo dict2 = dict1, porque: dict2 solo será una referencia a dict1, 
+# y los cambios realizados en dict1 también se realizarán automáticamente en dict2.
+
+# Una de las formas correctas de hacer una copia de un diccionario es utilizar el método copy().
+print("Utilizando el método copy() para copiar un diccionario.")
+print(f"Diccionario original: {thisdict}")
+thisdict_copy = thisdict.copy()
+print(f"Diccionario copiado: {thisdict_copy}")
+print('')
+
+# Otra forma de hacer una copia de un diccionario es utilizando el método integrado dict()
+print("Utilizando el método dict() para copiar un diccionario.")
+print(f"Diccionario original: {thisdict}")
+thisdict_copy2 = dict(thisdict)
+print(f"Diccionario copiado: {thisdict_copy2}")
+print('')
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# DICCIONARIOS ANIDADOS
+# Un diccionario puede contener diccionarios, lo que se denomina diccionarios anidados.
+print("Un diccionario puede contener otros diccionarios, lo que se conoce como diccionarios anidados.")
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+print("Ejemplo de un diccionario anidado:")
+print(myfamily)
+print('')
+
+# Otra manera de hacer un diccionario anidado es agregar los diccionarios independientes dentro de un nuevo diccionario
+print("Un diccionario anidado puede ser creado a partir de diccionarios independientes.")
+child1 = {
+  "name" : "Emily",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+print(f"Los diccionarios independientes son:")
+print(f"Dict1: {child1}")
+print(f"Dict2: {child2}")
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+}
+print("El diccionario anidado resultante es:")
+print(myfamily)
+print('')
+
+# Para acceder a los elementos de un diccionario anidado se debe consultar el nombre clave de los diccionarios,
+# comenzando con el diccionario más grande 
+print("Para acceder a elementos de un diccionario anidado se debe utilizar el nombre clave de los diccionarios.")
+print(f"El nombre del segundo hijo del diccionario {myfamily} es: {myfamily['child2']['name']}")
+print('')
+
+# Tambien es posible acceder a un elemento de un diccionario anidado utilizando el método get()
+print("tambien es posible acceder a elementos de un diccionario anidado utilizando el método get().")
+child2_name = myfamily.get("child1").get("name")
+print("El nombre del primer hijo es:", child2_name)
+print('')
+
+# También es posible recorrer un diccionario anidado utilizando el método items():
+print("Para recorrer un diccionario anidado se puede utilizar el método items().")
+print(f"Recorriendo el diccionario: {myfamily}")
+for children, attributes in myfamily.items():
+  for attribute in attributes:
+    print(attribute + ':', attributes[attribute])
+print('')
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# METODOS ADICIONALES DE DICCIONARIOS
+print("\nPRINCIPALES METODOS DE LISTAS\n")
+
+# El método len() determina cuántos elementos estan presentes en un diccionario
+print("El metodo len() determina cuantos elementos estan presentes en un diccionario")
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(f"El diccionario {thisdict} tiene un total de {len(thisdict)} elementos")
+print('')
+
+# el método fromkeys() permite crear un diccionario con las claves y el valor especificados.
+print("El metodo fromkeys() permite crear un diccionario con las claves y el valor especificados.")
+x = ('key1', 'key2', 'key3')
+y = 10
+print("las claves del diccionario son: ", x)
+print("los valores del diccionario son: ", y)
+thisdict2 = dict.fromkeys(x, y)
+print(f"diccionario creado con el metodo fromkeys(): ", thisdict2)
+print('')
+
+# el método setdefault() devuelve el valor de la clave especificada. Si la clave no existe: se inserta la clave, con el valor especificado
+print("El método setdefault() devuelve el valor de la clave especificada. Si la clave no existe: se inserta la clave, con el valor especificado")
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+model = car.setdefault("model")
+print(f"el valor de la clave 'model' del diccionario {car} es: {model}")
+color = car.setdefault("color", 'red')
+print(f"el valor de la clave 'color' del diccionario {car} es: {color}")
+# Nota en este caso el diccionario original tambien es alterado
+
