@@ -47,11 +47,18 @@ else:
    print(f"{a} es mayor que {b}")
 print('')
 
-# En Python es posible ejecutar una sentencia if-else en una sola línea de código, 
-# siempre y cuando solo tenga una única declaración (línea de código) que cumpla la condición (verdadera o falsa). 
-print('Utilizando la abreviación de la sentencia condicional "IF-ELSE" en Python')
-print(f"Evaluando si {b} es > que {a}")
+# En Python es posible ejecutar una sentencia if-else en una sola línea de código,
+# siempre y cuando solo tenga una única declaración (línea de código) que cumpla la condición (verdadera o falsa).
+# Esta técnica se conoce como Operadores Ternarios o Expresiones Condicionales.
+print('Utilizando la abreviación de la sentencia condicional "IF-ELSE", también conocido como operador ternario en Python')
+a, b = 33, 200
+print(f"Evaluando si {b} es mayor que {a}")
 print(f"{a} es mayor o igual que {b}") if a >= b else print(f"{b} es mayor que {a}")
+
+# También es posible tener varias declaraciones else en una misma línea. Esta técnica se conoce como operador ternario múltiple
+print('Utilizando el operador ternario múltiple para evaluar varias condiciones en una única línea de código')
+print(f"{a} es mayor que {b}") if a > b else print(f"{a} es igual a {b}") if a == b else print(f"{b} es mayor que {a}")
+print('')
 
 # ----------------------------------------------------------------------------------------------------------------------------------------
 # Condicional "ELIF"
@@ -92,4 +99,16 @@ elif a == b:
    print(f"{a} y {b} son iguales")
 else:
    print("La condición else se cumple")
+print('')
+
+# En Python es posible tener declaraciones if dentro de otras, lo que se conoce como declaraciones if anidadas.
+print("Utilizando las declaraciones if anidadas para evaluar múltiples condiciones")
+x = 41
+print(f"Evaluando si el número {x} está en un rango específico")
+if x > 10:
+    print(f"{x} está por encima de 10")
+    if x > 20:
+        print(f"{x} está también por encima de 20")
+    else:
+        print(f"pero {x} no está por encima de 20")
 print('')
